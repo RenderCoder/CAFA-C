@@ -1,0 +1,68 @@
+		<div id="group-topost-btn-box">
+			<button class="btn btn-primary" id="group-topost-btn">发帖</button>
+		</div>
+		<div id="start-box">
+			<ul id="start-box-nav" class="nav nav-tabs">
+				<li><a href="#post-weibo" data-toggle="tab">发微博</a></li>
+				<li class="active"><a href="#post-tieba" data-toggle="tab">发贴</a></li>
+				<li><a href="#post-tougao" data-toggle="tab">投稿</a></li>
+			</ul>
+			<!-- Tab panes -->
+			<div class="tab-content">
+				<div class="tab-pane fade in" id="post-weibo">
+					<textarea id="start-box-textarea" class="form-control" rows="3"></textarea>
+					<button type="button" class="btn btn-default glyphicon glyphicon-picture start-box-btn"></button>
+					<span id="more-post-box">
+						<button type="button" class="btn btn-default glyphicon glyphicon-copyright-mark start-box-btn"></button>
+						<button type="button" class="btn btn-default glyphicon glyphicon-paperclip start-box-btn"></button>
+						<button type="button" class="btn btn-default glyphicon glyphicon-film start-box-btn"></button>
+						<button type="button" class="btn btn-default glyphicon glyphicon-music start-box-btn"></button>
+						<button id="more-post-button-hide" type="button" class="btn btn-default glyphicon glyphicon-chevron-left start-box-btn"></button>
+					</span>
+					<button id="more-post-button" type="button" class="btn btn-default glyphicon glyphicon-plus start-box-btn"></button>
+					<button type="button" class="btn btn-primary pull-right">发送</button>
+				</div>
+				<div class="tab-pane fade in active" id="post-tieba" style="overflow: auto;">
+					<form role="form">
+						<div class="form-group">
+							<label for="tieba-title">标题</label>
+							<input type="text" class="form-control" id="tieba-title">
+						</div>
+						<div class="form-group">
+							<label for="start-box-tieba-content">正文</label>
+							<textarea id="start-box-tieba-content" class="form-control" rows="3"></textarea>
+						</div>
+						<div class="form-group">
+							<!-- <label for="tieba-title">微吧</label> -->
+							<select class="form-control">
+								<option>选择微吧</option>
+								<option>T3交流吧</option>
+								<option>TVB吧</option>
+								<option>汽车吧</option>
+								<option>影视吧</option>
+								<option>动漫吧</option>
+								<option>冷笑话吧</option>
+							</select>
+						</div>
+						<button class="btn btn-primary pull-right">发表</button>
+					</form>
+				</div>
+				<div class="tab-pane fade" id="post-tougao">
+					<div id="check-pindao">
+						<label class="checkbox-inline">
+							<input type="checkbox" id="inlineCheckbox1" value="option1"> 频道一
+						</label>
+						<label class="checkbox-inline">
+							<input type="checkbox" id="inlineCheckbox2" value="option2"> 频道二
+						</label>
+						<label class="checkbox-inline">
+							<input type="checkbox" id="inlineCheckbox3" value="option3"> 频道三
+						</label>
+					</div>
+					<textarea id="start-box-textarea-tougao" class="form-control" rows="3"></textarea>
+					<button type="button" class="btn btn-default">:)</button>	
+					<button type="button" class="btn btn-default">+</button>
+					<button type="button" class="btn btn-primary pull-right">投稿</button>
+				</div>
+			</div>
+		</div>

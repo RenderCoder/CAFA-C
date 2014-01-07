@@ -1,0 +1,13 @@
+<?php 
+//canjs 测试接口
+$r = array();
+if(route::$url_argument[0]==null){
+	$r['id']='no sets -test';
+}else{
+	$r['id']=route::$url_argument[0];
+}
+$r['data']='nothing';
+$r['data1']='canjs';
+$r['data2']='canjs';
+echo json_encode($r);
+ ?>

@@ -1,0 +1,25 @@
+<?php 
+include 'public/header.html';
+?>
+<div class="container">
+<!-- dump -->
+<?php
+/*dump_tip('route::$app_page');
+dump(route::$app_page);
+dump_tip('route::$url_argument');
+dump(route::$url_argument);*/
+ ?>
+ <!-- dump end -->
+	<div class="jumbotron card">
+		<h1>User Center</h1>
+		<p>方便，快捷的管理你的Moreii帐户。</p>
+		<p>
+			<a href="<?=APP_URL?>login" class="btn btn-primary btn-lg" role="button">登录</a>
+			<a href="<?=APP_URL?>register" class="btn btn-default btn-lg" role="button">立即注册</a>
+		</p>
+	</div>
+</div>
+
+<?php 
+include 'public/footer.html';
+  ?>

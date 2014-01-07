@@ -1,0 +1,78 @@
+	
+	<div id="content" class="col-md-8">
+		<?php 
+		include 'start-box.html';
+		 ?>
+		<div id="group-detail">
+			<ol class="breadcrumb" id="group-detail-nav">
+				<li><a href="<?php echo SITE_URL;?>group/">微吧</a></li>
+				<li><a href="#">T3交流吧</a></li>
+				<li class="active">正文</li>
+			</ol>
+			<h3>
+				关于LESS的一点东西
+			</h3>
+			<hr>
+			<div id="group-detail-content">
+				<blockquote>
+					<h4>
+						什么是LESSCSS
+					</h4>
+				</blockquote>
+				<p>
+					LESSCSS是一种动态样式语言，属于CSS预处理语言的一种，它使用类似CSS的语法，为CSS的赋予了动态语言的特性，如变量、继承、运算、函数等，更方便CSS的编写和维护。
+				</p>
+				<p>
+					LESSCSS可以在多种语言、环境中使用，包括浏览器端、桌面客户端、服务端。
+				</p>
+				<blockquote>
+					<h4>
+						语言特性快速预览
+					</h4>
+				</blockquote>
+				<p>
+					<strong>
+						变量：
+					</strong>	
+				</p>
+				<p>
+					变量允许我们单独定义一系列通用的样式，然后在需要的时候去调用。所以在做全局样式调整的时候我们可能只需要修改几行代码就可以了。
+				</p>
+				<p>
+					<strong>
+						混合（Mixins）
+					</strong>
+				</p>
+				<p>
+					混合可以将一个定义好的class A轻松的引入到另一个class B中，从而简单实现class B继承class A中的所有属性。我们还可以带参数地调用，就像使用函数一样。
+				</p>
+				<p>
+					<strong>
+						嵌套
+					</strong>
+				</p>
+				<p>
+					我们可以在一个选择器中嵌套另一个选择器来实现继承，这样很大程度减少了代码量，并且代码看起来更加的清晰。
+				</p>
+				<p>
+					<strong>
+						函数和运算
+					</strong>
+				</p>
+				<p>
+					运算提供了加，减，乘，除操作；我们可以做属性值和颜色的运算，这样就可以实现属性值之间的复杂关系。LESS中的函数一一映射了JavaScript代码，如果你愿意的话可以操作属性值。
+				</p>
+				<p>
+					<strong>
+						更多说明
+					</strong>
+				</p>
+				<p>
+					更多更详细的语法特性请参见语言文档
+				</p>
+			</div>
+		</div>
+		<?php 
+		include 'comment-input-box.html';
+		 ?>
+	</div><!-- end of #content -->

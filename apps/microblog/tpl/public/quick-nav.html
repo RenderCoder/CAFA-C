@@ -1,0 +1,45 @@
+<?php 
+/*
+*quick-nav.html
+*/
+ ?>
+<div id="quick-nav" class="sidebar-item">
+ 	<!-- setting -->
+	<div class="col-md-12 sidebar-item-setting text-right" data-trigger="modal" href="<?php echo AJAX;?>side-bar-setting-quick-nav" data-title="拖动配置快捷方式">
+		<span class="glyphicon glyphicon-wrench"></span> 配置
+	</div>
+	<div class="col-md-12">
+		<p>
+			<strong>快捷方式</strong>
+		</p>
+	</div>
+ 	<div class="col-md-3 quick-nav-item">
+ 		<a href="#">
+ 			<img class="quick-nav-img" src="<?php echo IMG;?>apps/weibo/quick-nav/link.png">
+ 			<p class="text-center">
+ 				频道
+ 			</p>
+ 		</a>
+ 	</div>
+ 	<div class="col-md-3 quick-nav-item">
+ 		<a href="#">
+ 			<img class="quick-nav-img" src="<?php echo IMG;?>apps/weibo/quick-nav/activity.png">
+ 			<p class="text-center">
+ 				活动
+ 			</p>
+ 		</a>
+ 	</div>
+ 	<div class="col-md-3 quick-nav-item">
+ 		<a href="<?php echo SITE_URL;?>group/weiba">
+ 			<img class="quick-nav-img" src="<?php echo IMG;?>apps/weibo/quick-nav/video.png">
+ 			<p class="text-center">
+ 				TV吧
+ 			</p>
+ 		</a>
+ 	</div>
+ 	<div class="col-md-3 quick-nav-item" data-trigger="modal" href="<?php echo AJAX;?>side-bar-setting-quick-nav" data-title="拖动配置快捷方式">
+ 		<a href="javascript:;">
+ 			<img class="quick-nav-img" src="<?php echo IMG;?>apps/weibo/quick-nav/add.png">
+ 		</a>
+ 	</div>
+</div>

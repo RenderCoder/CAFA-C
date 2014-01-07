@@ -1,0 +1,29 @@
+<?php 
+// sidebar-comment-list.html
+?>
+<p>
+	<strong>回复:</strong>
+</p>
+<div>
+	<?php 
+	for ($j=0; $j < 6; $j++) { 
+		?>
+	<div class="media comment-item">
+		<a class="pull-left" href="#">
+			<img class="media-object img-rounded" src="http://www.gravatar.com/avatar/<?php echo md5('admin@cafa.me')?>?s=40&amp;d=mm&amp;r=G" alt="用户昵称">
+		</a>
+		<div class="media-body">
+		<p class="media-heading comment-name">
+				用户昵称：
+				<span class="pull-right comment-floor"><?php echo $j+1;?>楼</span>
+				<span class="pull-right comment-reponse">回复</span>
+		</p>
+		<p class="comment-p">
+			后台升级还是有问题滴，升级后后台游客配置出不来，其他是否有问题还不知道。
+		</p>
+		</div>
+	</div>
+		<?php
+	}
+	 ?>
+</div>

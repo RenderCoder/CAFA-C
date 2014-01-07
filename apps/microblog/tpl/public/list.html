@@ -1,0 +1,339 @@
+<div id="microblog-list">
+<?php
+/*$data=$weibo->getMixData();
+if(count($data)>0){
+	foreach ($data as $key0 => $value0) {
+		?>
+			<ul class="media-list weibo-item">
+				<li class="media">
+					<a class="pull-left" href="#">
+						<img class="media-object img-rounded" src="http://www.gravatar.com/avatar/<?php echo md5($value0->mail)?>?s=50&amp;d=mm&amp;r=G" alt="..." width=50>
+					</a>
+					<div class="media-body">
+						
+						<div class="weibo-item-bar">
+							<div class="pull-left">
+								<span class="glyphicon glyphicon-thumbs-up"></span> 32
+							</div>
+							<div class="pull-left">
+								<span class="glyphicon glyphicon-comment"></span> 161
+							</div>
+							<div class="pull-left">
+								<span class="glyphicon glyphicon-retweet"></span> 52
+							</div>
+						</div>
+					</div>
+				</li>
+			</ul>
+		<?php
+
+	}
+}*/
+?>
+	<div class="microblog-item">
+		<!-- header -->
+		<div class="media m-i-header">
+			<div class="pull-left m-i-h-avatar">
+				<img class="media-object m-i-h-a-img" src="
+					<?php echo IMG?>apps/microblog/avatar/avatar-yellow.jpg
+				">
+			</div>
+			<div class="media-body m-i-h-info">
+					<div class="m-i-h-i-l-name">蜂畀</div>
+					<div class="m-i-h-i-l-description">来自Android客户端 下午4:13</div>
+			</div>
+			<div class="m-i-h-right">
+				<div class="m-i-h-i-r-digg" num="0">
+					<span class="glyphicon glyphicon-thumbs-up"></span>
+					<span class="m-i-h-i-d-num">0</span>
+				</div>
+			</div>
+		</div>
+		<!-- body -->
+		<div class="m-i-body">
+			<p class="m-i-b-p">
+				冈比亚闪电宣布与台湾断交，台湾外交部次长柯森耀表示，对于冈比亚的决定，中华民国政府感到震惊与遗憾，且已经透过适当管道传达。
+			</p>
+		</div>
+		<!-- footer -->
+		<div class="m-i-footer">
+			<div class="m-i-f-info">
+				转发39 |  评论119
+			</div>
+			<div class="m-i-f-btnbox">
+				<div class="m-i-f-b-info">
+					转发39 |  评论119
+				</div>
+				<div class="m-i-f-b-btns">
+					<div class="m-i-f-b-b-like">
+						<span class="m-i-f-b-b-icon">
+							<span class="glyphicon glyphicon-heart"></span>
+						</span>
+						喜欢
+					</div>
+					<div class="m-i-f-b-b-reponse">
+						<span class="m-i-f-b-b-icon">
+							<span class="glyphicon glyphicon-share-alt"></span>
+						</span>
+						回复
+					</div>
+					<div class="m-i-f-b-b-retweet">
+						<span class="m-i-f-b-b-icon">
+							<span class="glyphicon glyphicon-retweet"></span>
+						</span>
+						转发
+					</div>
+					<div class="m-i-f-b-b-more">
+						<span class="m-i-f-b-b-icon">
+							<span class="glyphicon glyphicon-plus"></span>
+						</span>
+						更多
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- a microblog with image -->
+	<div class="microblog-item">
+		<!-- header -->
+		<div class="media m-i-header">
+			<div class="pull-left m-i-h-avatar">
+				<img class="media-object m-i-h-a-img" src="
+					data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAACqUlEQVR4Xu2Y60tiURTFl48STFJMwkQjUTDtixq+Av93P6iBJFTgg1JL8QWBGT4QfDX7gDIyNE3nEBO6D0Rh9+5z9rprr19dTa/XW2KHl4YFYAfwCHAG7HAGgkOQKcAUYAowBZgCO6wAY5AxyBhkDDIGdxgC/M8QY5AxyBhkDDIGGYM7rIAyBgeDAYrFIkajEYxGIwKBAA4PDzckpd+322243W54PJ5P5f6Omh9tqiTAfD5HNpuFVqvFyckJms0m9vf3EY/H1/u9vb0hn89jsVj8kwDfUfNviisJ8PLygru7O4TDYVgsFtDh9Xo9NBrNes9cLgeTybThgKenJ1SrVXGf1WoVDup2u4jFYhiPx1I1P7XVBxcoCVCr1UBfTqcTrVYLe3t7OD8/x/HxsdiOPqNGo9Eo0un02gHkBhJmuVzC7/fj5uYGXq8XZ2dnop5Mzf8iwMPDAxqNBmw2GxwOBx4fHzGdTpFMJkVzNB7UGAmSSqU2RoDmnETQ6XQiOyKRiHCOSk0ZEZQcUKlU8Pz8LA5vNptRr9eFCJQBFHq//szG5eWlGA1ywOnpqQhBapoWPfl+vw+fzweXyyU+U635VRGUBOh0OigUCggGg8IFK/teXV3h/v4ew+Hwj/OQU4gUq/w4ODgQrkkkEmKEVGp+tXm6XkkAOngmk4HBYBAjQA6gEKRmyOL05GnR99vbW9jtdjEGdP319bUIR8oA+pnG5OLiQoghU5OElFlKAtCGr6+vKJfLmEwm64aosd/XbDbbyIBSqSSeNKU+HXzlnFAohKOjI6maMs0rO0B20590n7IDflIzMmdhAfiNEL8R4jdC/EZIJj235R6mAFOAKcAUYApsS6LL9MEUYAowBZgCTAGZ9NyWe5gCTAGmAFOAKbAtiS7TB1Ng1ynwDkxRe58vH3FfAAAAAElFTkSuQmCC
+				">
+			</div>
+			<div class="media-body m-i-h-info">
+					<div class="m-i-h-i-l-name">毕加波</div>
+					<div class="m-i-h-i-l-description">来自网页 下午3:31</div>
+			</div>
+			<div class="m-i-h-right">
+				<div class="m-i-h-i-r-digg" num="low">
+					<span class="glyphicon glyphicon-thumbs-up"></span>
+					<span class="m-i-h-i-d-num">7</span>
+				</div>
+			</div>
+		</div>
+		<!-- body -->
+		<div class="m-i-body">
+			<img class="img-responsive" src="<?php echo IMG?>apps/microblog/upload/pic1.jpg">
+			<p class="m-i-b-p">
+				闲逛pinterest发现的家居设计作品。设计师气质，高大上的节奏～
+			</p>
+		</div>
+		<!-- footer -->
+		<div class="m-i-footer">
+			<div class="m-i-f-info">
+				转发39 |  评论119
+			</div>
+			<div class="m-i-f-btnbox">
+				<div class="m-i-f-b-info">
+					转发39 |  评论119
+				</div>
+				<div class="m-i-f-b-btns">
+					<div class="m-i-f-b-b-like">
+						<span class="m-i-f-b-b-icon">
+							<span class="glyphicon glyphicon-heart"></span>
+						</span>
+						喜欢
+					</div>
+					<div class="m-i-f-b-b-reponse">
+						<span class="m-i-f-b-b-icon">
+							<span class="glyphicon glyphicon-share-alt"></span>
+						</span>
+						回复
+					</div>
+					<div class="m-i-f-b-b-retweet">
+						<span class="m-i-f-b-b-icon">
+							<span class="glyphicon glyphicon-retweet"></span>
+						</span>
+						转发
+					</div>
+					<div class="m-i-f-b-b-more">
+						<span class="m-i-f-b-b-icon">
+							<span class="glyphicon glyphicon-plus"></span>
+						</span>
+						更多
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- a microblog with more text -->
+	<div class="microblog-item">
+		<!-- header -->
+		<div class="media m-i-header">
+			<div class="pull-left m-i-h-avatar">
+				<img class="media-object m-i-h-a-img" src="
+					<?php echo IMG?>apps/microblog/avatar/avatar-yellow.jpg
+				">
+			</div>
+			<div class="media-body m-i-h-info">
+					<div class="m-i-h-i-l-name">蜂畀</div>
+					<div class="m-i-h-i-l-description">来自网页 下午2:07</div>
+			</div>
+			<div class="m-i-h-right">
+				<div class="m-i-h-i-r-digg" num="medium">
+					<span class="glyphicon glyphicon-thumbs-up"></span>
+					<span class="m-i-h-i-d-num">18</span>
+				</div>
+			</div>
+		</div>
+		<!-- body -->
+		<div class="m-i-body">
+			<p class="m-i-b-p">
+				Intelligent Energy公司推出一款UPP氢燃料电池装置为手机充电，售价200美元。采用可拆成两节的结构，原理是氢气和氧气发生反应，产生水和热还有电流，容量达25000mAh，燃料闸是可以重复使用，就像是需要加油的电池。计划12月在非洲开售，其它市场需2014年。
+			</p>
+		</div>
+		<!-- footer -->
+		<div class="m-i-footer">
+			<div class="m-i-f-info">
+				转发39 |  评论119
+			</div>
+			<div class="m-i-f-btnbox">
+				<div class="m-i-f-b-info">
+					转发39 |  评论119
+				</div>
+				<div class="m-i-f-b-btns">
+					<div class="m-i-f-b-b-like">
+						<span class="m-i-f-b-b-icon">
+							<span class="glyphicon glyphicon-heart"></span>
+						</span>
+						喜欢
+					</div>
+					<div class="m-i-f-b-b-reponse">
+						<span class="m-i-f-b-b-icon">
+							<span class="glyphicon glyphicon-share-alt"></span>
+						</span>
+						回复
+					</div>
+					<div class="m-i-f-b-b-retweet">
+						<span class="m-i-f-b-b-icon">
+							<span class="glyphicon glyphicon-retweet"></span>
+						</span>
+						转发
+					</div>
+					<div class="m-i-f-b-b-more">
+						<span class="m-i-f-b-b-icon">
+							<span class="glyphicon glyphicon-plus"></span>
+						</span>
+						更多
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- with comment -->
+	<div class="microblog-item">
+		<!-- header -->
+		<div class="media m-i-header">
+			<div class="pull-left m-i-h-avatar">
+				<img class="media-object m-i-h-a-img" src="
+					<?php echo IMG?>apps/microblog/avatar/avatar-yellow.jpg
+				">
+			</div>
+			<div class="media-body m-i-h-info">
+					<div class="m-i-h-i-l-name">蜂畀</div>
+					<div class="m-i-h-i-l-description">来自网页 下午12:37</div>
+			</div>
+			<div class="m-i-h-right">
+				<div class="m-i-h-i-r-digg" num="medium">
+					<span class="glyphicon glyphicon-thumbs-up"></span>
+					<span class="m-i-h-i-d-num">11</span>
+				</div>
+			</div>
+		</div>
+		<!-- body -->
+		<div class="m-i-body">
+			<p class="m-i-b-p">
+				Intelligent Energy公司推出一款UPP氢燃料电池装置为手机充电，售价200美元。采用可拆成两节的结构，原理是氢气和氧气发生反应，产生水和热还有电流，容量达25000mAh，燃料闸是可以重复使用，就像是需要加油的电池。计划12月在非洲开售，其它市场需2014年。
+			</p>
+		</div>
+		<!-- footer -->
+		<div class="m-i-footer">
+			<div class="m-i-f-info">
+				转发39 |  评论119
+			</div>
+			<div class="m-i-f-btnbox">
+				<div class="m-i-f-b-info">
+					转发39 |  评论119
+				</div>
+				<div class="m-i-f-b-btns">
+					<div class="m-i-f-b-b-like">
+						<span class="m-i-f-b-b-icon">
+							<span class="glyphicon glyphicon-heart"></span>
+						</span>
+						喜欢
+					</div>
+					<div class="m-i-f-b-b-reponse">
+						<span class="m-i-f-b-b-icon">
+							<span class="glyphicon glyphicon-share-alt"></span>
+						</span>
+						回复
+					</div>
+					<div class="m-i-f-b-b-retweet">
+						<span class="m-i-f-b-b-icon">
+							<span class="glyphicon glyphicon-retweet"></span>
+						</span>
+						转发
+					</div>
+					<div class="m-i-f-b-b-more">
+						<span class="m-i-f-b-b-icon">
+							<span class="glyphicon glyphicon-plus"></span>
+						</span>
+						更多
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="m-i-comment">
+			<textarea name="m-i-c-textarea" class="m-i-c-textarea" placeholder="说点什么..."></textarea>
+			<div class="m-i-c-btns">
+				<div class="pull-left"></div>
+				<div class="pull-right text-right">
+					<button class="m-i-c-b-retweet">回复并转发</button>
+					<button class="m-i-c-b-reply">回复</button>
+				</div>
+			</div>
+			<!-- comment-items -->
+			<div class="media m-i-c-item">
+				<a href="javascript:;" class="pull-left m-i-c-i-avatar">
+					<img class="media-object m-i-c-i-a-img" src="
+						<?php echo IMG?>apps/microblog/avatar/avatar-yellow.jpg
+					">
+				</a>
+				<div class="media-body m-i-c-i-body">
+					<div class="m-i-c-i-b-info">
+						<span class="m-i-c-i-b-i-name">甲虫CC2013</span>
+						<span class="m-i-c-i-b-i-time">（今天08:01）</span>
+						<span class="glyphicon glyphicon-share-alt pull-right m-i-c-i-b-i-reply">回复</span>
+					</div>
+					<div class="m-i-c-i-b-content">
+						飘过,专业打酱油~+_+~
+					</div>
+				</div>
+			</div>
+			<!-- comment-item -->
+			<div class="media m-i-c-item">
+				<a href="javascript:;" class="pull-left m-i-c-i-avatar">
+					<img class="media-object m-i-c-i-a-img" src="
+						<?php echo IMG?>apps/microblog/avatar/avatar-yellow.jpg
+					">
+				</a>
+				<div class="media-body m-i-c-i-body">
+					<div class="m-i-c-i-b-info">
+						<span class="m-i-c-i-b-i-name">蜂畀</span>
+						<span class="m-i-c-i-b-i-time">（今天12:03）</span>
+						<span class="glyphicon glyphicon-share-alt pull-right m-i-c-i-b-i-reply">回复</span>
+					</div>
+					<div class="m-i-c-i-b-content">
+						回复<a href="#">@甲虫CC2013</a>:你妹 =_=#!!!
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+</div>

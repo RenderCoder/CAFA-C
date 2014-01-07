@@ -1,0 +1,112 @@
+<div id="messagebox">
+	<div id="messagebox-sidebar" class="col-md-3">
+		<div class="messagebox-sidebar-item messagebox-sidebar-item-active"> 全部 </div>
+		<div class="messagebox-sidebar-item"> @我 </div>
+		<div class="messagebox-sidebar-item"> 评论 </div>
+		<div class="messagebox-sidebar-item"> 私信 </div>
+	</div>
+	<div id="messagebox-content" class="col-md-9">
+		<!-- <div class="col-md-12" style="padding:0;">
+			<div class="input-group">
+				<input type="text" class="form-control">
+				<span class="input-group-btn">
+					<button class="btn btn-default" type="button">搜索</button>
+				</span>
+			</div>
+		</div> -->
+		<div class="media messagebox-content-item" style="border-bottom:1px solid #e5e5e5;padding-bottom:10px;">
+			<button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
+			<a class="pull-left" href="#">
+				<img class="media-object" src="<?php echo IMG;?>apps/weibo/upload/ava-test.jpg" alt="..." width="40">
+			</a>
+			<div class="media-body">
+				<p class="media-heading">
+					XXX @了你
+					<a class="btn btn-primary btn-xs messagebox-view-btn">查看</a>
+				</p>
+				<p class="text-muted">
+				【又拍云配置补充攻略】网站正式运营1个月。。。
+				</p>
+			</div>
+		</div>
+
+		<div class="media messagebox-content-item" style="border-bottom:1px solid #e5e5e5;padding-bottom:10px;">
+			<button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
+			<a class="pull-left" href="#">
+				<img class="media-object" src="<?php echo IMG;?>apps/weibo/ava/0 (1).jpg" alt="..." width="40">
+			</a>
+			<div class="media-body">
+				<p class="media-heading">
+					BiuBiu~ 评论了你的微博
+					<a class="btn btn-primary btn-xs messagebox-view-btn">查看</a>
+				</p>
+				<p class="text-muted">
+				围观~ biu~
+				</p>
+			</div>
+		</div>
+
+		<div class="media messagebox-content-item" style="border-bottom:1px solid #e5e5e5;padding-bottom:10px;">
+			<button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
+			<a class="pull-left" href="#">
+				<img class="media-object" src="<?php echo IMG;?>apps/weibo/ava/0 (2).jpg" alt="..." width="40">
+			</a>
+			<div class="media-body">
+				<p class="media-heading">
+					BiuBiu~ 评论了你的微博
+					<a class="btn btn-primary btn-xs messagebox-view-btn">查看</a>
+				</p>
+				<p class="text-muted">
+				围观~ biu~
+				</p>
+			</div>
+		</div>
+
+		<div class="media messagebox-content-item" style="border-bottom:1px solid #e5e5e5;padding-bottom:10px;">
+			<button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
+			<a class="pull-left" href="#">
+				<img class="media-object" src="<?php echo IMG;?>apps/weibo/ava/0 (3).jpg" alt="..." width="40">
+			</a>
+			<div class="media-body">
+				<p class="media-heading">
+					BiuBiu~ 评论了你的微博
+					<a class="btn btn-primary btn-xs messagebox-view-btn">查看</a>
+				</p>
+				<p class="text-muted">
+				围观~ biu~
+				</p>
+			</div>
+		</div>
+
+		<!-- view more -->
+		<div id="messagebox-viewmore">
+			<p class="text-muted">
+				查看更多
+			</p>
+		</div>
+	</div>
+</div>
+<div style="clear:both;"></div>
+<hr>
+<button class="btn btn-primary pull-right model-ajax-setting-ok" data-dismiss="modal">关闭</button>
+<button class="btn btn-default pull-right model-ajax-setting-ok" data-dismiss="modal">标记已读</button>
+<script type="text/javascript">
+$(function(){
+	$(document).on('click','.messagebox-sidebar-item',function(){
+		var i=1;
+		$('.messagebox-sidebar-item').removeClass('messagebox-sidebar-item-active');
+		$(this).addClass('messagebox-sidebar-item-active');
+		$('.messagebox-content-item').animate({
+			'opacity':'0.2'
+		},50,'linear',function(){
+			/*$.each($('.messagebox-content-item img.media-object'),function(index,item){
+				if(i>14){i=1;}
+				$('.messagebox-content-item img.media-object').index(index).attr('src','<?php echo IMG;?>apps/weibo/ava/0 ('+(i+index)+').jpg');
+			});*/
+			$('.messagebox-content-item').animate({
+				'opacity':'1'
+			},50,'linear');
+		});
+	});
+});
+</script>

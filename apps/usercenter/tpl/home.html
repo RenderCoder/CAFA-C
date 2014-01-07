@@ -1,0 +1,117 @@
+<?php 
+include 'public/header.html';
+?>
+<div class="container">
+<!-- dump -->
+<?php
+/*dump_tip('route::$app_page');
+dump(route::$app_page);
+dump_tip('route::$url_argument');
+dump(route::$url_argument);*/
+ ?>
+ <!-- dump end -->
+	<div class="jumbotron card">
+		<h1>User Center</h1>
+		<div class="card-main">
+			<!-- Nav tabs -->
+			<ul class="nav nav-tabs">
+				<li class="active"><a href="#data" data-toggle="tab">资料</a></li>
+				<li><a href="#message" data-toggle="tab">消息</a></li>
+				<li><a href="#safe" data-toggle="tab">安全</a></li>
+			</ul>
+
+			<!-- Tab panes -->
+			<div class="tab-content">
+				<div class="tab-pane active" id="data">
+					<div class="form-group">
+						<label for="mail">邮箱</label>
+						<input type="email" class="form-control" id="mail" placeholder="" disabled value="hu@cafa.me">
+					</div>
+					<div class="form-group">
+						<label for="name">昵称</label>
+						<input type="text" class="form-control" id="name" placeholder="中文，字母或数字组合。">
+					</div>
+					<div class="form-group">
+						<label for="tel">手机</label>
+						<input type="number" class="form-control" id="tel" placeholder="数字">
+					</div>
+					<div class="form-group">
+						<label for="intro">简介</label>
+						<textarea class="form-control" id="intro" rows="3" placeholder="有关个人的简短说明。推荐50字以内。"></textarea>
+					</div>
+					<div class="form-group">
+						<label for="avatar">头像</label>
+						<div style="margin:10px 0;">
+							<img src="
+								data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAABN0lEQVR4Xu2YQQ6EIAxFdeXFODZnYu9qJk5C0sGiUiAx8FyKVPr76VPWEMJnmfhaEQAHsAXoARP3wIUmCAWgABSAAlBgYgXAIBgEg2AQDE4MAX6GwCAYBINgEAyCwYkVAIO1GPTe//nHOXfyU3xGG9PM1yNmzuRVDpCJ5ZKUyTwRoEfMqx3eTIBcJbdtW/Z9/w2XCtAqZncB5Atkkkc1NQFileVYFCi1fypcLqa1jzd1QM6+2va4EycKWRLTIkI3AY7FPKmmVmF5LxXvLmapCF0FiItp5QCZXClZulBAq/IVBtN9rvUAa8zSysfnqxxgfemb5iFA7Zfgm6ppWQsOwAEciXEkxpGYpXuOMgcKQAEoAAWgwCgd3ZIHFIACUAAKQAFL9xxlDhSAAlAACkCBUTq6JY/pKfAFwO6XkLwNdToAAAAASUVORK5CYII=
+							" alt="头像">
+						</div>
+						<input type="file" id="avatar">
+					</div>
+					<hr>
+					<div class="form-group">
+						<a href="javascript:;" class="btn btn-primary btn-lg" role="button">保存更改</a>
+						<a href="javascript:;" class="btn btn-default btn-lg" role="button">取消</a>
+					</div>
+				</div>
+				<div class="tab-pane" id="message">
+					<div class="col-sm-12 msg-class-box" id="msg-class-box">
+						<span class="msg-class active">全部</span>
+						<span class="msg-class">私信</span>
+						<span class="msg-class">提到我</span>
+						<span class="msg-class">回复</span>
+						<span class="msg-class">通知</span>
+					</div>
+					<div class="msg-item-box" id="msg-item-box">
+						<div class="msg-item">
+							<p>
+								<a href="javascript:;">毕加波</a> 提到了你。 <a href="javascript:;"><span class="label label-primary">New</span></a>
+							</p>
+						</div>
+						<div class="msg-item">
+							<p>
+								<a href="javascript:;">毕加波</a> 回复了你的微博。 <a href="javascript:;"><span class="label label-primary">New</span></a>
+							</p>
+						</div>
+						<div class="msg-item">
+							<p>
+								<a href="javascript:;">蜂畀</a> 给你发了一条私信。<a href="javascript:;"><span class="label label-primary">New</span></a>
+							</p>
+							<blockquote>
+								<p>
+									具体我也说不太清楚，推荐参考官方文档，地址是 http://www.moreii.com/doc/class... 
+								</p>
+							</blockquote>
+						</div>
+					</div>
+					<div class="form-group" style="margin-top:15px;">
+						<a href="javascript:;" class="btn btn-primary btn-lg" role="button">更多</a>
+						<a href="javascript:;" class="btn btn-default btn-lg" role="button">全部标记已读</a>
+					</div>
+				</div>
+				<div class="tab-pane" id="safe">
+					<div class="form-group">
+						<label for="oldpassword">原始密码</label>
+						<input type="password" class="form-control" id="oldpassword" placeholder="">
+					</div>
+					<div class="form-group">
+						<label for="newpassword">新密码</label>
+						<input type="password" class="form-control" id="newpassword" placeholder="">
+					</div>
+					<div class="form-group">
+						<label for="newpassword-repeat">重复密码</label>
+						<input type="password" class="form-control" id="newpassword-repeat" placeholder="">
+					</div>
+					<div class="form-group">
+						<a href="javascript:;" class="btn btn-primary btn-lg" role="button">保存更改</a>
+						<a href="javascript:;" class="btn btn-default btn-lg" role="button">取消</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<?php 
+include 'public/footer.html';
+  ?>

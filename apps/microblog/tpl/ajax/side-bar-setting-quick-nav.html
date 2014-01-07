@@ -1,0 +1,118 @@
+<div id="quick-nav-setting-box">
+	<!-- <div class="col-md-3 text-center quick-nav-item-active"> -->
+	<div class="col-md-3 text-center">
+		<a href="#">
+			<img class="quick-nav-img" src="<?php echo IMG;?>apps/weibo/quick-nav/link.png">
+			<p>
+				频道
+			</p>
+		</a>
+	</div>
+	<div class="col-md-3 text-center">
+		<a href="#">
+			<img class="quick-nav-img" src="<?php echo IMG;?>apps/weibo/quick-nav/activity.png">
+			<p>
+				活动
+			</p>
+		</a>
+	</div>
+	<div class="col-md-3 text-center">
+		<a href="#">
+			<img class="quick-nav-img" src="<?php echo IMG;?>apps/weibo/quick-nav/video.png">
+			<p>
+				TV吧
+			</p>
+		</a>
+	</div>
+	<div class="col-md-3 text-center">
+		<a href="#">
+			<img class="quick-nav-img" src="<?php echo IMG;?>apps/weibo/quick-nav/add.png">
+		</a>
+	</div>
+</div>
+<!-- Nav tabs -->
+<ul class="nav nav-tabs quick-nav-choose-tab">
+	<li class="active"><a href="#quick-nav-recommend" data-toggle="tab">推荐</a></li>
+	<li><a href="#quick-nav-weiba" data-toggle="tab">微吧</a></li>
+	<li><a href="#quick-nav-channel" data-toggle="tab">频道</a></li>
+	<li><a href="#quick-nav-user" data-toggle="tab">用户</a></li>
+</ul>
+
+<!-- Tab panes -->
+<div class="tab-content">
+	<div class="tab-pane fade in active" id="quick-nav-recommend">
+		<div class="quick-nav-choose-box text-center">
+			<!-- 循环账号列表 start-->
+			<div class="col-md-2">
+				<a href="#">
+					<img class="quick-nav-img" src="<?php echo IMG;?>apps/weibo/quick-nav/c.png">
+					<p>
+						签到
+					</p>
+				</a>
+			</div>
+			<div class="col-md-2">
+				<a href="#">
+					<img class="quick-nav-img" src="<?php echo IMG;?>apps/weibo/quick-nav/search.png">
+					<p>
+						搜索
+					</p>
+				</a>
+			</div>
+			<div class="col-md-2">
+				<a href="#">
+					<img class="quick-nav-img" src="<?php echo IMG;?>apps/weibo/quick-nav/setting.png">
+					<p>
+						设置
+					</p>
+				</a>
+			</div>
+			<div class="col-md-2">
+				<a href="#">
+					<img class="quick-nav-img" src="<?php echo IMG;?>apps/weibo/quick-nav/video.png">
+					<p>
+						TV吧
+					</p>
+				</a>
+			</div>
+			<div class="col-md-2">
+				<a href="#">
+					<img class="quick-nav-img" src="<?php echo IMG;?>apps/weibo/quick-nav/link.png">
+					<p>
+						频道
+					</p>
+				</a>
+			</div>
+			<div class="col-md-2">
+				<a href="#">
+					<img class="quick-nav-img" src="<?php echo IMG;?>apps/weibo/quick-nav/rss.png">
+					<p>
+						精品订阅
+					</p>
+				</a>
+			</div>
+			<!-- 循环账号列表 end-->
+		</div>
+	</div>
+	<div class="tab-pane fade" id="quick-nav-weiba">
+		<div class="quick-nav-choose-box">
+		</div>
+	</div>
+	<div class="tab-pane fade" id="quick-nav-channel">
+		<div class="quick-nav-choose-box">
+		</div>
+	</div>
+	<div class="tab-pane fade" id="quick-nav-user">
+		<div class="input-group margin-top-10">
+			<input type="text" class="form-control" placeholder="输入用户昵称">
+			<span class="input-group-btn">
+				<button class="btn btn-default" type="button">搜索</button>
+			</span>
+		</div>
+		<div class="quick-nav-choose-box">
+		</div>
+	</div>
+</div>
+<hr>
+<button id="save-quick-nav" class="btn btn-primary pull-right model-ajax-setting-ok">保存</button>
+<button class="btn btn-default pull-right" data-dismiss="modal">取消</button>

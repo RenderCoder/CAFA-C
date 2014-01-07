@@ -1,0 +1,22 @@
+.card-main .tab-content{
+	padding: 15px;
+	overflow: auto;
+}
+.msg-class-box{
+	padding: 0 30px 0 0;
+}
+.msg-class-box .active{
+	color: #4e8efa;
+	font-weight: bold;
+}
+.msg-item-box{
+}
+.msg-item{
+	padding: 15px 0 8px 0;
+	border-bottom: 1px solid #eeeeee;
+}
+.msg-class{
+	line-height: 30px;
+	margin-right: 20px;
+	color: #747474;
+}

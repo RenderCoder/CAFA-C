@@ -1,0 +1,17 @@
+.blog-item{
+}
+blockquote.blog-item-title{
+	border-color: #4d90fe;
+	margin-bottom: 0;
+}
+blockquote.blog-item-content{
+	margin-bottom: 0;
+}
+.blog-item blockquote p{
+	color: #747474;
+	font-size: 13px;
+	line-height: 20px;
+}
+#blog-list{
+	margin-bottom: 48px;
+}

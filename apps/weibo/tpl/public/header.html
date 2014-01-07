@@ -1,0 +1,91 @@
+<html>
+<head>
+	<title><?php echo SITE_NAME?></title>
+	<link rel="stylesheet" type="text/css" href="<?php echo CSS;?>bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="<?php echo CSS;?>todc-bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="<?php echo CSS;?>sco/scojs.css">
+	<link rel="stylesheet" type="text/css" href="<?php echo CSS;?>apps/weibo/main.css">
+	<script type="text/javascript" src="<?php echo JS;?>jquery-2.0.3.min.js"></script>
+	<script type="text/javascript" src="<?php echo JS;?>bootstrap.min.js"></script>
+	<script type="text/javascript" src="<?php echo JS;?>sco/sco.modal.js"></script>
+	<script type="text/javascript" src="<?php echo JS;?>bootstrap-wysiwyg.js"></script>
+	<script type="text/javascript" src="<?php echo JS;?>jquery.pin.js"></script>
+	<script type="text/javascript" src="<?php echo JS;?>apps/weibo/main.js"></script>
+</head>
+<body>
+<nav id="bar" class="navbar navbar-fixed-top navbar-default" role="navigation">
+	<!-- <div class="container"> -->
+		<div class="col-md-12">
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+					<span class="sr-only">ThinkSNS-SR</span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+				<!-- <a class="navbar-brand" href="#">ThinkSNS</a> -->
+				<!-- <a id="topbar-logo" class="navbar-brand" href="#">ThinkSNS</a> -->
+			</div>
+			<div class="collapse navbar-collapse" id="bar-link">
+			    <ul class="nav navbar-nav">
+					<li class="active"><a href="#">首页</a></li>
+					<li><a href="#">微吧</a></li>
+					<li><a href="#">频道</a></li>
+					<li class="dropdown">
+						<a href="#" class="dropdown-toggle" data-toggle="dropdown">更多 <b class="caret"></b></a>
+						<ul class="dropdown-menu">
+							<li><a href="#">日记</a></li>
+							<li><a href="#">找人</a></li>
+							<li><a href="#">投票</a></li>
+							<li><a href="#">相册</a></li>
+							<li><a href="#">资讯</a></li>
+							<li><a href="#">站点列表</a></li>
+							<li class="divider"></li>
+							<li><a href="#">多应用</a></li>
+						</ul>
+					</li>
+				</ul>
+				<ul class="nav navbar-nav navbar-right">
+					<form id="search-box" class="navbar-form navbar-left" role="search">
+						<div class="form-group">
+							<input type="text" class="form-control" placeholder="Search">
+						</div>
+					<button type="submit" class="btn btn-primary">搜索</button>
+					</form>
+				<li><a id="do-search" href="#">搜索</a></li>
+				<li class="dropdown"  data-trigger="modal" href="<?php echo AJAX;?>side-bar-messagebox" data-title="消息盒子">
+					<a href="#" class="dropdown-toggle" data-toggle="dropdown">
+						消息 <b class="caret"></b>
+					</a>
+					<ul class="dropdown-menu">
+						<li><a href="#">@我<span class="label label-primary pull-right">12</span></a></li>
+						<li><a href="#">评论</a></li>
+						<li><a href="#">私信</a></li>
+						<li class="divider"></li>
+						<li><a href="#">通知<span class="label label-success pull-right">1</span></a></li>
+					</ul>
+				</li>
+				<li class="dropdown">
+					<a href="#" class="dropdown-toggle" data-toggle="dropdown">毕加波的帐号 <b class="caret"></b></a>
+					<ul class="dropdown-menu">
+						<li><a href="#">我的主页</a></li>
+						<li><a href="#">任务中心</a></li>
+						<li><a href="#">个人设置</a></li>
+						<li class="divider"></li>
+						<li><a href="#">退出</a></li>
+					</ul>
+				</li>
+				</ul>
+			</div>
+		</div>
+	<!-- </div> -->
+</nav>
+<div id="top-bar" class="container">
+	<div id="logo">
+		<!-- <img src="<?php echo IMG;?>apps/weibo/logo.fw.png"> -->
+		<h1 style="font-family: 'omnes-pro', sans-serif;">
+			ThinkSNS DEMO
+		</h1>
+	</div>
+</div>
+<div id="main" class="container">

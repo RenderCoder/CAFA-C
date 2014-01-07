@@ -1,0 +1,8 @@
+<?php
+/*
+*微博API
+*/
+$weibo=new weibo();
+$weibo->db->flush();
+$weibo->api($_REQUEST);
+?>

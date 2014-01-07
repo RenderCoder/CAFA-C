@@ -1,0 +1,322 @@
+<div id="weibo-list">
+<?php
+/*$data=$weibo->getMixData();
+if(count($data)>0){
+	foreach ($data as $key0 => $value0) {
+		?>
+			<ul class="media-list weibo-item">
+				<li class="media">
+					<a class="pull-left" href="#">
+						<img class="media-object img-rounded" src="http://www.gravatar.com/avatar/<?php echo md5($value0->mail)?>?s=50&amp;d=mm&amp;r=G" alt="..." width=50>
+					</a>
+					<div class="media-body">
+						
+						<div class="weibo-item-bar">
+							<div class="pull-left">
+								<span class="glyphicon glyphicon-thumbs-up"></span> 32
+							</div>
+							<div class="pull-left">
+								<span class="glyphicon glyphicon-comment"></span> 161
+							</div>
+							<div class="pull-left">
+								<span class="glyphicon glyphicon-retweet"></span> 52
+							</div>
+						</div>
+					</div>
+				</li>
+			</ul>
+		<?php
+
+	}
+}*/
+?>
+<ul id="weibo-list-nav" class="nav nav-pills">
+	<li class="active"><a href="#">我关注的人</a></li>
+	<li><a href="#">全站动态</a></li>
+	<li><a href="#">话题</a></li>
+</ul>
+<!-- zhuanfa test//////////////////////////////////////// -->
+
+	<ul class="media-list weibo-item" data-id="100">
+		<li class="media">
+			<a class="pull-left weibo-item-avatar-a" href="#">
+				<img class="media-object" src="<?php echo IMG;?>apps/weibo/upload/ava-test.jpg" alt="美漫迷" width=50>
+			</a>
+			<div class="media-body">
+				<h4 class="media-heading weibo-uname">
+					美漫迷：
+				</h4>
+				<div class="retweet-box">
+					<h4 class="media-heading weibo-uname" style="color:#555555;">
+						美漫迷：
+					</h4>
+					<p class="weibo-p">
+						钢力士为了阻挠Legacy病毒传播而去世。Kitty回到X庄园取了他的骨灰，撒在俄国的土地上。
+					</p>
+					<p class="weibo-img">
+						<img class="img-responsive" src="<?php echo IMG;?>apps/weibo/upload/x-man.jpg">
+					</p>
+					<div class="weibo-item-bar">
+						<div class="pull-left weibo-time">
+							<span></span> 2013-10-30 15:07
+						</div>
+						<div class="pull-right text-muted weibo-item-bar-show">
+							161 评论 | 52 转发
+						</div>
+						<div class="pull-right text-muted weibo-item-bar-hide">
+							161 评论 | 52 转发
+						</div>
+
+						
+					</div>
+				</div>
+				<div class="weibo-item-bar">
+					<div class="pull-left weibo-time">
+						<span></span> 2013-10-30 17:07
+					</div>
+					<div class="pull-right text-muted weibo-item-bar-show">
+						161 评论 | 52 转发
+					</div>
+
+					<div class="pull-right weibo-plus weibo-item-bar-hide">
+						<span class="glyphicon glyphicon-plus"></span> 
+						<!-- 32 -->
+					</div>
+					<div class="pull-right weibo-digg weibo-item-bar-hide">
+						<span class="glyphicon glyphicon-thumbs-up"></span> 
+						<!-- 32 -->
+					</div>
+					<div class="pull-right weibo-reweet weibo-item-bar-hide" data-trigger="modal" href="<?php echo AJAX;?>side-bar-retweet" data-title="转发">
+						<span class="glyphicon glyphicon-retweet"></span> 
+						<!-- 52 -->
+					</div>
+					<div class="pull-right weibo-comment weibo-item-bar-hide" data-show="0" data-id="<?=$i;?>">
+						<span class="glyphicon glyphicon-comment"></span> 
+						<!-- 161 -->
+					</div>
+					<div class="pull-right weibo-like weibo-item-bar-hide">
+						<span class="glyphicon glyphicon-heart-empty"></span> 
+						<!-- 喜欢 -->
+					</div>
+				</div>
+			</div>
+		</li>
+	</ul>
+	<!-- comment start -->
+	<div class="comment-input-box" id="comment-input-box-100">
+		<div class="input-group">
+			<!-- <label for="exampleInputEmail1">回复：</label> -->
+			<input type="text" class="form-control comment-input" placeholder="请输入回复内容">
+			<span class="input-group-btn">
+				<button class="btn btn-primary" type="button">评论</button>
+			</span>
+		</div>
+	</div><!--comment-input-box=-END-->
+	<div class="comment-list-box" id="comment-list-box-100">
+		<?php 
+		for ($j=1; $j < 6; $j++) { 
+			?>
+		<div class="media comment-item">
+			<a class="pull-left" href="#">
+				<img class="media-object" src="<?php echo IMG;?>apps/weibo/ava/0 (<?php echo $j;?>).jpg" alt="用户昵称" width="40">
+			</a>
+			<div class="media-body">
+			<p class="media-heading comment-name">
+					用户昵称：
+					<span class="pull-right comment-floor">18:06</span>
+					<span class="pull-right comment-reponse" data-id="100">回复</span>
+			</p>
+			<p class="comment-p">
+				围观~
+				<?php 
+				for ($q=0; $q < $j; $q++) { 
+					echo "biu~";
+				}
+				 ?>
+			</p>
+			</div>
+		</div>
+			<?php
+		}
+		 ?>
+	</div>
+
+<!-- zhuanfa test end //////////////////////////////////// -->
+
+
+<!-- img test//////////////////////////////////////// -->
+
+	<ul class="media-list weibo-item" data-id="0">
+		<li class="media">
+			<a class="pull-left weibo-item-avatar-a" href="#">
+				<img class="media-object" src="<?php echo IMG;?>apps/weibo/upload/ava-test.jpg" alt="美漫迷" width=50>
+			</a>
+			<div class="media-body">
+				<h4 class="media-heading weibo-uname">
+					美漫迷：
+				</h4>
+				<p class="weibo-p">
+					钢力士为了阻挠Legacy病毒传播而去世。Kitty回到X庄园取了他的骨灰，撒在俄国的土地上。
+				</p>
+				<p class="weibo-img">
+					<img class="img-responsive" src="<?php echo IMG;?>apps/weibo/upload/x-man.jpg">
+				</p>
+				<div class="weibo-item-bar">
+					<div class="pull-left weibo-time">
+						<span></span> 2013-10-30 17:07
+					</div>
+					<div class="pull-right text-muted weibo-item-bar-show">
+						161 评论 | 52 转发
+					</div>
+
+					<div class="pull-right weibo-plus weibo-item-bar-hide">
+						<span class="glyphicon glyphicon-plus"></span> 
+						<!-- 32 -->
+					</div>
+					<div class="pull-right weibo-digg weibo-item-bar-hide">
+						<span class="glyphicon glyphicon-thumbs-up"></span> 
+						<!-- 32 -->
+					</div>
+					<div class="pull-right weibo-reweet weibo-item-bar-hide" data-trigger="modal" href="<?php echo AJAX;?>side-bar-retweet" data-title="转发">
+						<span class="glyphicon glyphicon-retweet"></span> 
+						<!-- 52 -->
+					</div>
+					<div class="pull-right weibo-comment weibo-item-bar-hide" data-show="0" data-id="<?=$i;?>">
+						<span class="glyphicon glyphicon-comment"></span> 
+						<!-- 161 -->
+					</div>
+					<div class="pull-right weibo-like weibo-item-bar-hide">
+						<span class="glyphicon glyphicon-heart-empty"></span> 
+						<!-- 喜欢 -->
+					</div>
+				</div>
+			</div>
+		</li>
+	</ul>
+	<!-- comment start -->
+	<div class="comment-input-box" id="comment-input-box-0">
+		<div class="input-group">
+			<!-- <label for="exampleInputEmail1">回复：</label> -->
+			<input type="text" class="form-control comment-input" placeholder="请输入回复内容">
+			<span class="input-group-btn">
+				<button class="btn btn-primary" type="button">评论</button>
+			</span>
+		</div>
+	</div><!--comment-input-box=-END-->
+	<div class="comment-list-box" id="comment-list-box-0">
+		<?php 
+		for ($j=1; $j < 6; $j++) { 
+			?>
+		<div class="media comment-item">
+			<a class="pull-left" href="#">
+				<img class="media-object" src="<?php echo IMG;?>apps/weibo/ava/0 (<?php echo $j;?>).jpg" alt="用户昵称" width="40">
+			</a>
+			<div class="media-body">
+			<p class="media-heading comment-name">
+					用户昵称：
+					<span class="pull-right comment-floor">18:06</span>
+					<span class="pull-right comment-reponse" data-id="0">回复</span>
+			</p>
+			<p class="comment-p">
+				围观~
+				<?php 
+				for ($q=0; $q < $j; $q++) { 
+					echo "biu~";
+				}
+				 ?>
+			</p>
+			</div>
+		</div>
+			<?php
+		}
+		 ?>
+	</div>
+
+<!-- img test end //////////////////////////////////// -->
+
+<?php
+for ($i=1; $i < 20; $i++) { 
+ ?>
+	<ul class="media-list weibo-item" data-id="<?=$i;?>">
+		<li class="media">
+			<a class="pull-left weibo-item-avatar-a" href="#">
+				<!-- <img class="media-object" src="http://www.gravatar.com/avatar/<?php echo md5('admin@cafa.me')?>?s=50&amp;d=mm&amp;r=G" alt="用户昵称<?php echo $i+1; ?>" width=50> -->
+				<img class="media-object" src="<?php echo IMG;?>apps/weibo/ava/0 (<?php echo rand(1,14);?>).jpg" alt="用户昵称<?php echo $i+1; ?>" width=50>
+			</a>
+			<div class="media-body">
+				<h4 class="media-heading weibo-uname">
+					用户昵称<?php echo $i+1; ?>：
+				</h4>
+				<p class="weibo-p">
+					【又拍云配置补充攻略】网站正式运营1个月，1.2G的网站空间就扛不住了，配置又拍云，经历了一个小秘书出差、客服放假、说明资料不足的痛苦过程，所以把我对又拍云的探索写下来，以便后人可以参考，避免走弯路。 
+				</p>
+				<div class="weibo-item-bar">
+					<div class="pull-left weibo-time">
+						<span></span> 2013-10-30 17:07
+					</div>
+					<div class="pull-right text-muted weibo-item-bar-show">
+						161 评论 | 52 转发
+					</div>
+
+					<div class="pull-right weibo-plus weibo-item-bar-hide">
+						<span class="glyphicon glyphicon-plus"></span> 
+						<!-- 32 -->
+					</div>
+					<div class="pull-right weibo-digg weibo-item-bar-hide">
+						<span class="glyphicon glyphicon-thumbs-up"></span> 
+						<!-- 32 -->
+					</div>
+					<div class="pull-right weibo-reweet weibo-item-bar-hide" data-trigger="modal" href="<?php echo AJAX;?>side-bar-retweet" data-title="转发">
+						<span class="glyphicon glyphicon-retweet"></span> 
+						<!-- 52 -->
+					</div>
+					<div class="pull-right weibo-comment weibo-item-bar-hide" data-show="0" data-id="<?=$i;?>">
+						<span class="glyphicon glyphicon-comment"></span> 
+						<!-- 161 -->
+					</div>
+					<div class="pull-right weibo-like weibo-item-bar-hide">
+						<span class="glyphicon glyphicon-heart-empty"></span> 
+						<!-- 喜欢 -->
+					</div>
+				</div>
+			</div>
+		</li>
+	</ul>
+	<!-- comment start -->
+	<div class="comment-input-box" id="comment-input-box-<?=$i;?>">
+		<div class="input-group">
+			<!-- <label for="exampleInputEmail1">回复：</label> -->
+			<input type="text" class="form-control comment-input" placeholder="请输入回复内容">
+			<span class="input-group-btn">
+				<button class="btn btn-primary" type="button">评论</button>
+			</span>
+		</div>
+	</div><!--comment-input-box=-END-->
+	<div class="comment-list-box" id="comment-list-box-<?=$i;?>">
+		<?php 
+		for ($j=3; $j < rand(3,10); $j++) { 
+			?>
+		<div class="media comment-item">
+			<a class="pull-left" href="#">
+				<img class="media-object" src="<?php echo IMG;?>apps/weibo/ava/0 (<?php echo $j;?>).jpg" alt="用户昵称" width="40">
+			</a>
+			<div class="media-body">
+			<p class="media-heading comment-name">
+					用户昵称：
+					<span class="pull-right comment-floor">18:06</span>
+					<span class="pull-right comment-reponse" data-id="<?php echo $i;?>">回复</span>
+			</p>
+			<p class="comment-p">
+				后台升级还是有问题滴，升级后后台游客配置出不来，其他是否有问题还不知道。
+			</p>
+			</div>
+		</div>
+			<?php
+		}
+		 ?>
+	</div>
+	<!-- comment-end -->
+<?php 
+}
+ ?>
+</div>

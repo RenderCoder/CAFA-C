@@ -1,0 +1,138 @@
+<div id="group-list">
+	<ol class="breadcrumb" id="group-detail-nav">
+		<li><a href="<?php echo SITE_URL;?>group/">微吧</a></li>
+		<li><a href="#">TV吧</a></li>
+		<!-- <li class="active">正文</li> -->
+	</ol>
+<table class="table group-table">
+	<tbody>
+		<?php
+		for ($i=0; $i < 3; $i++) { 
+		 ?>
+		 <?php 
+		if($i===0){
+		?>
+			<tr class="group-tr">
+				<td class="group-td-title group-td-first"><a href="<?php echo SITE_URL;?>group/detail">大家知道一个叫禁果的APP吗</a> <span class="label label-success">置顶</span>  <span class="label label-warning">精华</span></td>
+				<td class="group-td-author group-td-first">用户<?php echo $i*5+1;?></td>
+				<td class="group-td-time group-td-first">2013-10-<?php echo 31-$i;?></td>
+				<td class="group-td-group group-td-first"><a href="#">T3交流吧</a></td>
+			</tr>
+		<?php
+		}else{
+		?>
+			<tr class="group-tr">
+				<td class="group-td-title"><a href="<?php echo SITE_URL;?>group/detail">
+					大家知道一个叫禁果的APP吗</a></td>
+				<td class="group-td-author">用户<?php echo $i*5+1;?></td>
+				<td class="group-td-time">2013-10-<?php echo 31-$i;?></td>
+				<td class="group-td-group"><a href="#">T3交流吧</a></td>
+			</tr>
+		<?php
+		}
+		 ?>
+		<?php 
+		if($i===0){
+		?>
+		</tbody>
+		</table>
+		<table class="table group-table">
+		<tbody>
+		<tr>
+			<td class="group-td-content group-td-noborder">
+				<p>
+					Σ(っ °Д °;)っ看它的简介牛逼哄哄的 
+					秒杀。。。 
+
+					但其实界面和内容还是不错的
+				</p>
+			</td>
+		</tr>
+		</tbody>
+		</table>
+		<table class="table group-table">
+		<tbody>
+		<?php
+		}
+		 ?>
+		<tr class="group-tr">
+			<td class="group-td-title"><a href="<?php echo SITE_URL;?>group/detail">希望升级3G的上传图片的功能</a></td>
+			<td class="group-td-author">用户<?php echo $i*5+2;?></td>
+			<td class="group-td-time">2013-10-<?php echo 31-$i;?></td>
+			<td class="group-td-group"><a href="#">T3交流吧</a></td>
+		</tr>
+		<?php 
+		if($i===0){
+		?>
+		</tbody>
+		</table>
+		<table class="table group-table">
+		<tbody>
+		<tr>
+			<td class="group-td-content group-td-noborder">
+				<p>
+					本帖搜集了各大人气角色精美图片（人气排行前30）图片有霸气、搞笑、呆萌（必要的会图文）
+				</p>
+			</td>
+		</tr>
+		</tbody>
+		</table>
+		<table class="table group-table">
+		<tbody>
+		<?php
+		}
+		 ?>
+		<tr class="group-tr">
+			<td class="group-td-title"><a href="<?php echo SITE_URL;?>group/detail">想在相册上传后的照片传到又拍云，应该怎么改？新手新手。。。</a></td>
+			<td class="group-td-author">用户<?php echo $i*5+3;?></td>
+			<td class="group-td-time">2013-10-<?php echo 31-$i;?></td>
+			<td class="group-td-group"><a href="#">TVB吧</a></td>
+		</tr>
+		<?php 
+		if($i===0){
+		?>
+		</tbody>
+		</table>
+		<table class="table group-table">
+		<tbody>
+		<tr>
+			<td class="group-td-content group-td-noborder">
+				<p>
+					一般人看到的都是生活的美好，佛看到的却是世事无常给人带来的痛苦。 
+				</p>
+			</td>
+		</tr>
+		</tbody>
+		</table>
+		<table class="table group-table">
+		<tbody>
+		<?php
+		}
+		 ?>
+		<tr class="group-tr">
+			<td class="group-td-title"><a href="<?php echo SITE_URL;?>group/detail">九九九</a></td>
+			<td class="group-td-author">用户<?php echo $i*5+4;?></td>
+			<td class="group-td-time">2013-10-<?php echo 31-$i;?></td>
+			<td class="group-td-group"><a href="#">动漫吧</a></td>
+		</tr>
+		<tr class="group-tr">
+			<td class="group-td-title"><a href="<?php echo SITE_URL;?>group/detail">【海营之家】的推广运营心得分享</a></td>
+			<td class="group-td-author">用户<?php echo $i*5+5;?></td>
+			<td class="group-td-time">2013-10-<?php echo 31-$i;?></td>
+			<td class="group-td-group"><a href="#">运营吧</a></td>
+		</tr>
+		<?php 
+		}
+		 ?>
+	</tbody>
+</table>
+<ul class="pagination pull-right">
+  <li><a href="#">&laquo;</a></li>
+  <li><a href="#">1</a></li>
+  <li><a href="#">2</a></li>
+  <li><a href="#">3</a></li>
+  <li><a href="#">4</a></li>
+  <li><a href="#">5</a></li>
+  <li><a href="#">&raquo;</a></li>
+</ul>
+</div>

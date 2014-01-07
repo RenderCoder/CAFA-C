@@ -1,0 +1,32 @@
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+	<title><?php echo SITE_NAME?></title>
+	<link rel="stylesheet" type="text/css" href="<?php echo CSS;?>bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="<?php echo CSS;?>todc-bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="<?php echo CSS;?>basic.css">
+	<script type="text/javascript" src="<?php echo JS;?>jquery-2.0.3.min.js"></script>
+	<script type="text/javascript" src="<?php echo JS;?>bootstrap.min.js"></script>
+	<script type="text/javascript" src="<?php echo JS;?>basic.js"></script>
+	<script type="text/javascript">
+	APP_PAGE='<?=route::$app_page;?>';
+	</script>
+</head>
+<body>
+<div id="tipbox">
+	<?php 
+	echo $GLOBALS['tip'];
+	 ?>	
+</div>
+<div class="container">
+	<div class="jumbotron card">
+		<h1>Moreii</h1>
+		<p>简洁，快速的Web3.0系统。</p>
+		<p>
+			<a href="javascript:;" class="btn btn-primary btn-lg" role="button">in construction</a>
+		</p>
+	</div>
+</div>
+</body>
+</html>
